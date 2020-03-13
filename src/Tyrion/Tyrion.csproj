@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Lucas Silva</Authors>
+        <Description>Tyrion is a mediator implementation for .Net Core</Description>
+        <RepositoryUrl>https://github.com/lucasluizss/Tyrion.CQRS</RepositoryUrl>
+        <PackageTags>mediator;cqrs;dotnet</PackageTags>
+        <PackageId>Tyrion</PackageId>
+        <Product>Tyrion.CQRS</Product>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <Version>1.1.1</Version>
+        <PackageReleaseNotes>In this new release we add some resources, included:
+1 - Adding new options for results.
+2 - Using depency injection for validations.
+3 - Including result for handler without return.
+4 - Improving extension methods.
+5 - Removendo necessidade de 'using', now all references is made by Tyrion.</PackageReleaseNotes>
+        <PackageProjectUrl>https://github.com/lucasluizss/Tyrion.CQRS</PackageProjectUrl>
+        <PackageIcon>tyrion.jpg</PackageIcon>
+        <PackageIconUrl />
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="..\..\..\..\Users\lucas.santos\Pictures\Camera Roll\tyrion.jpg">
+          <Pack>True</Pack>
+          <PackagePath></PackagePath>
+        </None>
+        <None Include="..\LICENSE" Pack="true" PackagePath="" />
+        <PackageReference Include="FluentValidation" Version="8.6.2" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.2" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.2" />
+    </ItemGroup>
+</Project>
